@@ -4,10 +4,11 @@
 
 
 def sum_of_odds(numbers):
-    #
-    # Your code here
-    #
-    return __something__
+    s = 0
+    for number in numbers:
+        if number % 2 == 1: 
+            s += number
+    return s
 
 
 assert sum_of_odds([1,1,2,9,1]) == 5
